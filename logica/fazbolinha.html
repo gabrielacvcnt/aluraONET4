@@ -1,0 +1,43 @@
+<canvas width="600" height="400"></canvas>
+
+<script>
+
+var tela = document.querySelector('canvas');
+var pincel = tela.getContext('2d');
+pincel.fillStyle = 'grey';
+pincel.fillRect(0, 0, 600, 400);
+var cores = ['blue', 'red', 'green']
+var indiceCorAtual = 0; // começa com blue
+
+    function fazBolinha(evento) {
+
+    var x = evento.pageX - tela.offsetLeft;
+    var y = evento.pageY - tela.offsetTop;
+    var raio = 10;
+    pincel.fillStyle = cores[indiceCorAtual];
+
+        if(evento.shiftKey){
+            raio = raio + 20; // AUMENTA O RAIO DA BOLINHA PRA 30 E VOLTA AO TAMANHO NORMAL NO PRÓXIMO CLIQUE POIS ESTÁ DENTRO DA FUNÇÃO; SE ESTIVESSE FORA, IRIA CONTINUAR AUMENTANDO A CADA CLIQUE.
+        }
+
+    pincel.beginPath();
+    pincel.arc(x, y, raio, 0, 2 * 3.14);
+    pincel.fill();
+    console.log(x + ',' + y);
+    }
+
+    tela.onclick = fazBolinha;
+
+    function mudaCor() {
+
+    indiceCorAtual++;
+
+        if (indiceCorAtual >= cores.length) {
+        indiceCorAtual = 0; // VOLTA À COR AZUL
+        }
+        return false; // NÃO EXIBE O PADRÃO CANVAS
+    }
+
+    tela.oncontextmenu = mudaCor;
+
+</script>

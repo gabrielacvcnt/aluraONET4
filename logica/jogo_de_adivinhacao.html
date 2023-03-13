@@ -1,0 +1,50 @@
+<meta charset="UTF-8">
+
+<script>
+
+    function pularLinha() {
+
+        document.write("<br>");
+        document.write("<br>");
+}
+
+    function mostrar(frase) {
+
+        document.write(frase);
+        pularLinha();
+}
+
+/* A função Math.random() gera um número aleatório. Queremos que ele gere um número entre 0 e 100, para isso multiplicaremos o número gerado por 100 pois queremos andar uma casa decimal para direita. Por exemplo, onde anteriormente tínhamos um número 21.77, agora temos 22.
+
+O primeiro número antes da vírgula sempre estará entre 0 e 9. Como queremos que o resultado esteja entre 0 e 100, utilizaremos a função Math.round() para arredondarmos o resultado de Math.random() e o número ficar inteiro. */
+
+var numeroPensado = Math.round(Math.random() * 100);
+
+/* Podemos testar várias vezes até acertarmos. Nesta hipótese, o navegador exibirá a mensagem: Você acertou!. Em seguida criaremos um teste para descobrirmos se o usuário errou ou acertou, utilizando o console.log() */
+
+console.log(numeroPensado);
+
+/* Com isso, o numeroPensado será exibido no console do navegador, em que poderemos visualizar antes mesmo de inserirmos nosso palpite. */
+
+var tentativas = 1;
+
+while(tentativas <= 3) {
+
+    var chute = parseInt(prompt("Chute um número e veja se é o mesmo que eu pensei... Já pensei! Qual você acha que é?"));
+
+    if(chute == numeroPensado) {
+
+        mostrar("Uau! Você acertou, pois eu pensei no número " + numeroPensado + ".");
+        break;
+
+    } else {
+
+        mostrar("Poxa, você errou! Eu havia pensado no número " + numeroPensado + ".");
+    }
+
+    tentativas++;
+}
+
+mostrar("FIM.");
+
+</script>

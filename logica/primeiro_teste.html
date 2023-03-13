@@ -1,0 +1,121 @@
+<meta charset="UTF-8">
+
+<h1><center>Curso Alura ONE - Pontos importantes</center></h1>
+
+<fieldset>
+
+<h3>Informações sobre a sintaxe do HTML e do JS:</h3>
+
+A) Os sistemas operacionais mais populares do mercado (Windows, Linux, Mac) já vêm com um navegador web padrão e todo navegador é capaz de interpretar um código escrito por nós;
+<br><br>
+
+B) Uma das linguagens que o navegador compreende é a HTML;
+<br><br>
+
+C) Um navegador é um poliglota;
+<br><br>
+
+D) Toda tag começa com <b><</b> e termina com <b>></b>;
+<br><br>
+
+E) Dependendo da tag, ela pode ou não ter fechamento. Por exemplo, a <b>tag < meta ></b> define o valor de diferentes atributos, como o que vimos mais cedo, o chamado charset.
+<br><br>
+
+F) Quando salvamos um arquivo texto no disco ele é salvo usando uma cadeia de caracteres (character set encoding). Se no editor de texto salvamos o arquivo contendo <b>charset UTF-8</b>, precisamos dar uma pista para o navegador de como ele deve ser processado. Se não fizermos isso, ele não conseguirá exibir corretamente qualquer texto acentuado;
+<br><br>
+
+G) Todo código escrito em JavaScript deve estar dentro da tag <b>< script ></b>;
+<br><br>
+
+H) Só usamos "<b><i>var</i></b>" quando estamos declarando a variável pela primeira vez;
+<br><br>
+
+I) Arrendodamos números com o comando/função <b>Math.<i>round</i>()</b>;
+<br><br>
+
+J) Para saber se um valor é <b><i>NaN</i></b> precisamos usar uma função específica, a <b><i>isNaN</i></b>. Essa função recebe um parâmetro e <b>retorna true</b> ou <b>false</b> caso o valor seja NaN ou não;
+<br><br>
+
+K) O <i><s>algumacoisa</s><b>.length</i></b> serve para atualizar automaticamente no laço <b>for()</b> a quantidade de arrays;
+<br><br>
+
+L) Os elementos de um array podem ser de qualquer tipo conhecido do JavaScript (String, número, boolean etc.): "var coisas = ["Gisele", 12, true];";
+<br><br>
+
+M) A <b>tag de código</b> que utilizamos para <b>criar uma tela de desenho</b> é a <b>"< canvas > < /canvas >"</b>. Com ela conseguimos criar a tela de desenho e dizer qual será sua altura (<b><i>height</b></i>) e largura (<b><i>width</b></i>);
+<br><br>
+
+N) O <b>fillRect()</b> precisa de algumas informações para conseguir desenhar o retângulo, que estarão na ordem: <b>posição <u>inicial</u> X</b> do “pincel”, <b>posição <u>inicial</u> Y</b> do “pincel”, <b>posição <u>final</u> X</b> do “pincel”, <b>posição <u>final</u> Y</b> do “pincel”.
+<br><br>
+
+O) A esse conjunto de propriedades, como <b><u>funções</u>getContext()</b>, <b>fillRect()</b>, <b>lineTo()</b>, <b>beginPath()</b>, a <b><u>propriedade</u> <i>fillStyle</b></i>, damos o nome de <b>APIs</b>, ou <b>bibliotecas</b>. Para descobrirmos estas bibliotecas, temos que pesquisar pela documentação da linguagem na internet, utilizando os termos "canvas 2d api". O link direto você pode acessar clicando <a href="https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D" target="_blank">aqui</a>;
+<br><br>
+
+P) Uma <b>função anônima</b> é aquela que <b>não possui um nome</b> e <b>não pode existir solta</b>, porque como não tem um nome, ninguém será capaz de chamá-la, mas <u>podemos atribuir a função anônima diretamente a uma variável ou a uma propriedade</u>;
+<br><br>
+
+Q) Para incluir um temporizador para executar algumas funções é só utilizar a função <b>setInterval()</b>, a qual requer dois <b>parâmetros obrigatórios</b>: o <b>código ou função a ser processado</b> e o <b>tempo em milissegundos entre os eventos</b> do temporizador;
+<br><br>
+
+R) A tag <b>< strong ></b> é utilizada para dar uma importância a um conteúdo, deixando-as em negrito. A tag <b>< em ></b> é utilizada para dar ênfase a algum conteúdo, deixando-as em itálico;
+
+</fieldset>
+
+
+<fieldset>
+
+<h3>Aula 2 - Concatenação:</h3>
+
+<script>
+	alert("Resumo da primeira aula");
+
+	document.write("Estou escrevendo do mundo JavaScript no mundo HTML.");
+
+	document.write("<br><br>");
+
+	document.write(10 + 20);
+
+	document.write("<br>" + 10 + "20");
+
+	document.write("<br> <br>");
+</script>
+
+</fieldset>
+
+
+<fieldset>
+
+<h3>Aula 3 - Variáveis:</h3>
+
+<script>
+    var mes = 6;
+
+    document.write("Realizei a prova no mês " + mes + ".");
+    mes = 7;
+
+    document.write("<br>Não, desculpe, realizei a prova no mês " + mes + ".<br>");
+    
+    document.write("<br>A  média das idades é  " + (39 + 20 + 41)/3);
+
+    var media = (39 + 20 + 41)/3;
+
+    document.write('<br>A média das idades é ' + media);
+
+    document.write('<br>A média das idades é ' + Math.round(media));
+</script>
+
+<br><br>
+
+<h3>Álcool ou Gasolina?</h3>
+
+<script>
+	var caminhoComGasolina = 480;
+	var caminhoComAlcool = 300;
+	var tanque = 40;
+	var consumoDeGasolina = caminhoComGasolina/tanque;
+	var consumoDeAlcool = caminhoComAlcool/tanque;
+
+	document.write("O consumo de Gasolina é igual a " + consumoDeGasolina + " e o consumo de Álcool é igual a " + consumoDeAlcool + ".");
+</script>
+
+</fieldset>

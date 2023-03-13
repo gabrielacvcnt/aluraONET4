@@ -1,0 +1,28 @@
+<meta charset="UTF-8">
+
+<script>
+
+/* Imprimir em ordem decrescente todos os números entre 20 e 0. */
+
+function pularLinha() {
+    document.write("<br>");
+}
+
+function mostrar(frase) {
+    document.write(frase);
+    pularLinha();
+}
+
+var anoCopa = 1930;
+var limite = parseInt(prompt("Qual é o ano limite?"));
+
+    while(anoCopa <= limite) {
+
+        mostrar(anoCopa + " teve copa;");
+        anoCopa = anoCopa + 4;
+    }
+
+pularLinha();
+mostrar("Ufa! Esses foram os anos de copa até " + limite + ".");
+
+</script>

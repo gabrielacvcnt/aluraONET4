@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	
+	<meta charset="UTF-8">
+	<h1><center>Curso Alura ONE - Pontos importantes</center></h1>
+
+	<fieldset>
+
+	<h3>Informações sobre a sintaxe do HTML e do JS:</h3>
+
+	A) Os sistemas operacionais mais populares do mercado (Windows, Linux, Mac) já vêm com um navegador web padrão e todo navegador é capaz de interpretar um código escrito por nós;
+	<br><br>
+
+	B) Uma das linguagens que o navegador compreende é a HTML;
+	<br><br>
+
+	C) Um navegador é um poliglota;
+	<br><br>
+
+	D) Toda tag começa com <b><</b> e termina com <b>></b>;
+	<br><br>
+
+	E) Dependendo da tag, ela pode ou não ter fechamento. Por exemplo, a <b>tag < meta ></b> define o valor de diferentes atributos, como o que vimos mais cedo, o chamado charset.
+	<br><br>
+
+	F) Quando salvamos um arquivo texto no disco ele é salvo usando uma cadeia de caracteres (character set encoding). Se no editor de texto salvamos o arquivo contendo <b>charset UTF-8</b>, precisamos dar uma pista para o navegador de como ele deve ser processado. Se não fizermos isso, ele não conseguirá exibir corretamente qualquer texto acentuado. É preciso apontar para o navegador que estamos usando um dicionário que tenha acentos e cedilha, sinais gráficos comuns na língua portuguesa. Portanto, a tag <b>< meta charset="UTF-8" ></b> serve para que todos os usuários vejam o site com o dicionário correto;
+	<br><br>
+
+	G) Todo código escrito em JavaScript deve estar dentro da tag <b>< script ></b>;
+	<br><br>
+
+	H) Só usamos "<b><i>var</i></b>" quando estamos declarando a variável pela primeira vez;
+	<br><br>
+
+	I) Arrendodamos números com o comando/função <b>Math.<i>round</i>()</b>;
+	<br><br>
+
+	J) Para saber se um valor é <b><i>NaN</i></b> precisamos usar uma função específica, a <b><i>isNaN</i></b>. Essa função recebe um parâmetro e <b>retorna true</b> ou <b>false</b> caso o valor seja NaN ou não;
+	<br><br>
+
+	K) O <i><s>algumacoisa</s><b>.length</i></b> serve para atualizar automaticamente no laço <b>for()</b> a quantidade de arrays;
+	<br><br>
+
+	L) Os elementos de um array podem ser de qualquer tipo conhecido do JavaScript (String, número, boolean etc.): "var coisas = ["Gisele", 12, true];";
+	<br><br>
+
+	M) A <b>tag de código</b> que utilizamos para <b>criar uma tela de desenho</b> é a <b>"< canvas > < /canvas >"</b>. Com ela conseguimos criar a tela de desenho e dizer qual será sua altura (<b><i>height</b></i>) e largura (<b><i>width</b></i>);
+	<br><br>
+
+	N) O <b>fillRect()</b> precisa de algumas informações para conseguir desenhar o retângulo, que estarão na ordem: <b>posição <u>inicial</u> X</b> do “pincel”, <b>posição <u>inicial</u> Y</b> do “pincel”, <b>posição <u>final</u> X</b> do “pincel”, <b>posição <u>final</u> Y</b> do “pincel”.
+	<br><br>
+
+	O) A esse conjunto de propriedades, como <b><u>funções</u> getContext()</b>, <b>fillRect()</b>, <b>lineTo()</b>, <b>beginPath()</b>, a <b><u>propriedade</u> <i>fillStyle</b></i>, damos o nome de <b>APIs</b>, ou <b>bibliotecas</b>. Para descobrirmos estas bibliotecas, temos que pesquisar pela documentação da linguagem na internet, utilizando os termos "canvas 2d api". O link direto você pode acessar clicando <a href="https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D" target="_blank">aqui</a>;
+	<br><br>
+
+	P) Uma <b>função anônima</b> é aquela que <b>não possui um nome</b> e <b>não pode existir solta</b>, porque como não tem um nome, ninguém será capaz de chamá-la, mas <u>podemos atribuir a função anônima diretamente a uma variável ou a uma propriedade</u>;
+	<br><br>
+
+	Q) Para incluir um temporizador para executar algumas funções é só utilizar a função <b>setInterval()</b>, a qual requer dois <b>parâmetros obrigatórios</b>: o <b>código ou função a ser processado</b> e o <b>tempo em milissegundos entre os eventos</b> do temporizador;
+	<br><br>
+
+	R) A tag <b>< strong ></b> é utilizada para dar uma importância a um conteúdo, <b>deixando-as em negrito</b>. A tag <b>< em ></b> é utilizada para dar ênfase a algum conteúdo, <b>deixando-as em itálico</b>;
+	<br><br>
+
+	S) Precisamos estruturar o nosso conteúdo e passar informações para o navegador, para que ele consiga transformar a nossa página e lê-la da forma correta. Para isso, precisamos falar de uma tag muito importante que vai na primeira linha do arquivo: a tag <b>< !DOCTYPE html ></b>. Esta tag <b>informa ao navegador qual versão do HTML estamos usando</b>;
+	<br><br>
+
+	T) O HTML ainda tem mais uma tag estrutural, que é a própria tag <b>< html ></b>. Ela é uma tag de conteúdo que <b>serve para marcarmos tudo que é, dentro desta página, o HTML que vai ser renderizado no navegador</b>;
+	<br><br>
+
+	U) Na estrutura correta do HTML, <b>inserimos as informações que queremos passar para o navegador</b> no <b>head</b> e as <b>tags de conteúdo</b> no <b>body</b>;
+	<br><br>
+
+	V) As tags têm um valor, um propósito, um significado, e <b>para mexer na apresentação visual dos elementos</b>, não usamos elas. <b>Usamos o CSS</b>. O CSS, que em uma <b>tradução</b> seria <b><i>folha de estilo em cascata</i></b>, é a forma como mexemos em cada um dos elementos granularmente, em cada um dos pontos desses elementos para podermos apresentar o nosso site do modo como quisermos. <strong>A primeira coisa a se fazer é procurar exatamente a tag do parágrafo que queremos modificar</strong>. Por que na tag do parágrafo? Porque quero que seja aplicado em todo o conteúdo que está ali dentro. Por isso a “folha de estilo em cascata”. <b>Quando vamos em um elemento anterior, ele reflete para todos os elementos que estão abaixo</b>. Como é uma folha de estilos em cascata, a cascata vai descendo, e <b>o que eu faço no elemento pai reflete para o elemento filho</b>;
+	<br><br>
+
+	W) A tag <b>< style ></b> é o <b>estilo do nosso elemento</b>. Dentro do style e entre aspas vou inserir o que quero alterar. Nesse caso, quero alterar o tamanho da fonte. Para fazer isso, sempre em inglês, tamanho da fonte, <b>< font size ></b>. O tamanho da fonte padrão no navegador é medido em pixels. Ocasionalmente o <b>tamanho padrão da fonte inicial do navegador</b> é de <b style="color: green">16 pixels</b>. Eu <b>quero mudar</b> a fonte <b>para 20 pixels</b>: vou até o parágrafo/tag desejada e aplico o estilo lá <b>< p style="font-size: <b style="color: red">20px</b>" ></b>. Agora que isso está funcionando, <b>quero alinhar todo esse conteúdo ao centro</b>. Só que eu estou fazendo a divisão de quatro tags, tenho a tag do título e tenho três parágrafos. Para alinhar um elemento ao centro, <b>uso uma propriedade chamada < text align ></b>. Para fazer uma <b>divisão entre duas apresentações</b>, dois itens que estamos apresentando, <b>colocamos um <b style="color: red; text-size: 20px">;</b></b> e assim conseguimos fazer a separação, exemplo: <b>< p style="font-size: 20px<b style="color: red">;</b> text-align: center" ></b>. Já o caractere <strong style="color: red; text-size: 20px">:</strong> serve para <b>atribuir um valor a uma propriedade</b>, exemplo: <b>(text-align<b style="color: red">:</b> center)</b>;
+	<br><br>
+
+	X) Existem <b>3 formas de configurarmos o CSS</b>. A <b>1ª forma</b> é a chamada <b>CSS <i>inline</i></b>, ou seja, <u>na linha onde temos nossa tag, adicionamos a propriedade do CSS</u>; a <b>2ª forma</b> é chamada de <b>CSS interno</b>, em que <u>é incluída a estilização em cada tag na propriedade <i>style</i>, no mesmo arquivo html</u>; e a <b>3ª forma</b> é <u>através de um arquivo externo</u>, por isso seu nome: <b>CSS externo</b>. Geralmente, chamamos o <u>arquivo que contém os estilos</u> de <b>style.css</b>. Observe que este arquivo possui a <b>extensão .css</b>. <u>Para utilizar a estilização do arquivo</u> style.css no index.html, <u>precisamos incluir <b>no head</b> o seguinte código</u>: <b>< link rel="stylesheet" href="style.css" ></b>. Também precisamos prestar <b>atenção na estrutura do HTML</b>, a tag <b>< body ></b> está acima nas hierarquias, em relação ao parágrafo, por exemplo.
+	<br><br>
+
+	Y) Podemos <b>representar cores no CSS</b> através do <b>sistema hexadecimal</b>, do <b>RGB</b> e também com os <b>nomes das cores</b>, por exemplo, a cor vermelha pode ser representada pelo nome red, o hexadecimal #FF0000 e o RGB rgb(255,0,0). A propriedade <b><i>height</i></b> <u>ajusta a altura do elemento</u>; a propriedade <b><i>width</i></b> <u>ajusta a largura do elemento</u>; a propriedade <b><i>padding</i></b> <u>ajusta o espaçamento interno do elemento</u>; e a propriedade <b><i>margin</i></b> <u>ajusta o espaçamento externo do elemento</u>. No HTML, trabalhamos com <b>listas ordenadas</b> tag <b>< ol ></b> e <b>listas não ordenadas</b> tag <b>< ul ></b>, cada uma delas tem um uso específico. Nas listas ordenadas, a ordem dos itens não pode ser alterada, como em uma receita, por exemplo. Já nas listas não ordenadas, a ordem é flexível, e não altera o resultado final; além disto, cada item da lista deve ser marcado pela tag <b>< li ></b>. Exemplo de estrutura:<br>
+	<b>< ul > <br>
+	    < li >Item lilás< /li > <br>
+	    < li >Item azul< /li > <br>
+	    < li >Item vermelho< /li > <br>
+	< /ul ></b>
+	<br><br>
+
+	Z) A tag <b>< div ></b> é a tag específica para <b>dividir o conteúdo</b>, criando blocos destes. Ela não tem outra função além dessa. Já a tag <b>< class ></b> <u>serve para replicarmos a aplicação do nosso CSS</u>, sem precisar copiar e colá-lo em vários elementos. Aplicamos a classe para isso. O comportamento de uma tag ocupar a largura inteira da página é chamado “block”. Ele bloqueia o conteúdo daquela linha. Todos os itens da nossa linha têm o comportamento block. Uma imagem não bloqueia o conteúdo, ela deixa que existam outros na lateral, e esse tipo de conteúdo é considerado inline. A diferença entre eles é que mesmo que eu diminua o tamanho, diminua a largura de um elemento block, ele vai sempre ocupar aquela linha, mesmo preenchendo só metade. Um elemento inline não me deixa alterar, por exemplo, o espaçamento externo e interno dele. Para isso, existe uma terceira característica, quando o elemento possui as duas condições. Ele é inline e block ao mesmo tempo. Ou seja, ele bloqueia uma largura, mas essa largura é fixa. Sou eu que dou o tamanho. E ele me deixa também mexer na largura e nos espaçamentos interno e externo. O display inline block ocupa só o tamanho do conteúdo, mas me deixa mexer na largura e espaçamentos. A tag <b>< header ></b> <u>é uma tag de conteúdo do HTML</u>, e não uma tag de estrutura. <b>Não confunda head com header</b>.
+
+	</fieldset>
+
+
+	<fieldset>
+	<h3>Aula 2 - Concatenação:</h3>
+
+	<script>
+		alert("Resumo da primeira aula");
+
+		document.write("Estou escrevendo do mundo JavaScript no mundo HTML.");
+
+		document.write("<br><br>");
+
+		document.write(10 + 20);
+
+		document.write("<br>" + 10 + "20");
+
+		document.write("<br> <br>");
+	</script>
+	</fieldset>
+
+
+	<fieldset>
+	<h3>Aula 3 - Variáveis:</h3>
+
+	<script>
+	    var mes = 6;
+
+	    document.write("Realizei a prova no mês " + mes + ".");
+	    mes = 7;
+
+	    document.write("<br>Não, desculpe, realizei a prova no mês " + mes + ".<br>");
+	    
+	    document.write("<br>A  média das idades é  " + (39 + 20 + 41)/3);
+
+	    var media = (39 + 20 + 41)/3;
+
+	    document.write('<br>A média das idades é ' + media);
+
+	    document.write('<br>A média das idades é ' + Math.round(media));
+	</script>
+
+	<br><br>
+
+	<h3>Álcool ou Gasolina?</h3>
+
+	<script>
+		var caminhoComGasolina = 480;
+		var caminhoComAlcool = 300;
+		var tanque = 40;
+		var consumoDeGasolina = caminhoComGasolina/tanque;
+		var consumoDeAlcool = caminhoComAlcool/tanque;
+
+		document.write("O consumo de Gasolina é igual a " + consumoDeGasolina + " e o consumo de Álcool é igual a " + consumoDeAlcool + ".");
+	</script>
+	</fieldset>
+
+</html>

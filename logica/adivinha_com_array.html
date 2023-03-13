@@ -1,0 +1,42 @@
+<meta charset="UTF-8">
+
+<input/>
+<button>Adivinhe o meu número secreto</button>
+
+<script>
+
+    var segredos = [5,7,10,2,3];
+
+    var input = document.querySelector("input");
+        input.focus();
+
+    function verificar() {
+
+    var achou = false;
+
+    for(var posicao = 0; posicao < segredos.length; posicao++) {
+
+    // O .length é para atualizar automaticamente no laço for a quantidade de arrays.
+
+        if(input.value == segredos[posicao]) {
+
+            alert("Você ACERTOU!");
+            achou = true;
+            break;
+        }
+    }
+
+    if(achou == false) {
+        alert("Você ERROU!");
+    }
+
+    input.value = "";
+    input.focus();
+
+    }
+
+    var button = document.querySelector("button");
+
+    button.onclick = verificar;
+
+</script>

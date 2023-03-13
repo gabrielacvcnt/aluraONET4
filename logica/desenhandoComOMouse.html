@@ -1,0 +1,72 @@
+<canvas width="600" height="400"></canvas>
+
+<br><br>
+Escolha uma cor <input type="color">
+
+<script>
+    var paleta = document.querySelector('input');
+    var tela = document.querySelector('canvas');
+    var pincel = tela.getContext('2d');
+
+    pincel.fillStyle = 'grey';
+    pincel.fillRect(0, 0, 600, 400);
+
+    var desenha = false;
+
+    function desenhaCirculo(evento) {
+
+        if(desenha) {
+            var x = evento.pageX - tela.offsetLeft;
+            var y = evento.pageY - tela.offsetTop;
+            pincel.fillStyle = paleta.value; // FUNÇÃO ANÔNIMA QUE PEGA O VALOR ATUAL DA PALETA SELECIONADA.
+            pincel.beginPath();
+            pincel.arc(x, y, 10, 0, 2 * 3.14);
+            pincel.fill();
+        }
+
+        console.log(x + ',' + y);
+    }
+
+    tela.onmousemove = desenhaCirculo;
+
+    /* A FUNÇÃO ACIMA DESCRITA PODE SER CONSTRUÍDA, TAMBÉM, ATRAVÉS DE UMA FUNÇÃO ANÔNIMA. FICANDO DESSA FORMA:
+
+    tela.onmousemove = function(evento) {
+
+        if(desenha) {
+            var x = evento.pageX - tela.offsetLeft;
+            var y = evento.pageY - tela.offsetTop;
+            pincel.fillSt(...)
+        }
+    */
+
+    function habilitaDesenho(){
+        desenha = true;
+    }
+
+    /* DA MESMA FORMA, ESTA FUNÇÃO PODERIA SER ANONIMIZADA PARA:
+
+    tela.onmousedown = function() {
+
+        desenha = true;
+    }
+    */
+
+    function desabilitaDesenho(){
+        desenha = false;
+    }
+
+    /* E ESTA PARA:
+
+     tela.onmouseup = function() {
+
+        desenha = false;
+    }
+    */
+
+    tela.onmousedown = habilitaDesenho;
+    tela.onmouseup = desabilitaDesenho;
+
+    /* EXPLICAÇÃO SOBRE FUNÇÕES ANÔNIMAS: uma função anônima é aquela que não possui um nome e não pode existir solta, porque como não tem um nome, ninguém será capaz de chamá-la, mas podemos atribuir a função anônima diretamente a uma variável ou a uma propriedade, como tela.onmousedown e tela.onmouseup. */
+
+</script>
